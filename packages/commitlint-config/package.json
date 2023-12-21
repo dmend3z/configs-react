@@ -1,0 +1,45 @@
+{
+  "name": "@dan28/commitlint-config",
+  "description": "Commitlint config for Dan28",
+  "author": {
+    "name": "Daniel Mendes",
+    "email": "nunodanielmendes22@gmail.com"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src",
+  "scripts": {
+    "lint": "eslint .",
+    "release": "../../bin/release.sh @dan28/commitlint-config"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
+  "resolutions": {
+    "decode-uri-component": "^0.2.1",
+    "json5": "^2.2.1",
+    "moment": "^2.29.4"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^17.6.7",
+    "commitlint-plugin-function-rules": "^2.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/lint": "^17.6.7",
+    "@commitlint/load": "^17.6.7",
+    "@dan28/eslint-config": "^1.0.1",
+    "eslint": "^8.46.0"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "^17.6.7"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

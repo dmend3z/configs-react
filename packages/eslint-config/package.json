@@ -13,9 +13,7 @@
   },
   "scripts": {
     "lint": "eslint . --ignore-pattern 'test/fixtures/*'",
-    "release": "../../cmd/release.sh @dan28/eslint-config",
-    "test": "jest",
-    "test:watch": "jest --watch --notify"
+    "release": "../../cmd/release.sh @dan28/eslint-config"
   },
   "lint-staged": {
     "package.json": [

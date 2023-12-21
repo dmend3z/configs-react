@@ -1,0 +1,40 @@
+{
+  "name": "@dan28/eslint-config-react",
+  "version": "1.0.0",
+  "description": "Eslint for react",
+  "license": "MIT",
+  "private": true,
+  "main": "src",
+  "scripts": {
+    "lint": "eslint . --ignore-pattern 'test/fixtures/*'",
+    "release": "../../bin/release.sh @dan28/eslint-config-react"
+  },
+  "lint-staged": {
+    "!(test/fixtures/**/*)*.js": [
+      "eslint"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@dan28/eslint-config": "^1.0.1",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort-class-members": "^1.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "eslint": "8",
+    "prettier": "3"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
