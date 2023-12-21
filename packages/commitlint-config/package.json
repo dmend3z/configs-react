@@ -5,7 +5,12 @@
     "name": "Daniel Mendes",
     "email": "nunodanielmendes22@gmail.com"
   },
-  "version": "1.0.0",
+  "keywords": [
+    "commitlint",
+    "config",
+    "dan28"
+  ],
+  "version": "1.0.1",
   "license": "MIT",
   "main": "src",
   "scripts": {

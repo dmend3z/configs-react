@@ -6,13 +6,10 @@
   "private": true,
   "main": "src",
   "scripts": {
-    "lint": "eslint . --ignore-pattern 'test/fixtures/*'",
+    "lint": "eslint .",
     "release": "../../bin/release.sh @dan28/eslint-config-react"
   },
   "lint-staged": {
-    "!(test/fixtures/**/*)*.js": [
-      "eslint"
-    ],
     "package.json": [
       "sort-package-json"
     ]

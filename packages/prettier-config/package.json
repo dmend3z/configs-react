@@ -1,0 +1,30 @@
+{
+  "name": "@dan28/prettier-config",
+  "version": "1.0.0",
+  "description": "Prettier",
+  "license": "MIT",
+  "main": "src",
+  "scripts": {
+    "lint": "eslint .",
+    "release": "../../bin/release.sh @dan28/prettier-config"
+  },
+  "lint-staged": {
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/parser": "^7.22.7",
+    "@dan28/eslint-config": "^1.0.1",
+    "eslint": "^8.46.0",
+    "prettier": "^3.0.0",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "prettier": "3"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
