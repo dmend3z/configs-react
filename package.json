@@ -1,0 +1,52 @@
+{
+  "name": "configs-react",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "https://github.com/daniimendes22/configs-react.git",
+  "author": "Daniel Mendes <nunodanielmendes22@gmail.com>",
+  "scripts": {
+    "lint": "yarn workspaces run lint",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
+    "release:commitlint-config": "yarn workspace @untile/commitlint-config release",
+    "release:eslint-config": "yarn workspace @untile/eslint-config release",
+    "release:eslint-config-react": "yarn workspace @untile/eslint-config-react release",
+    "release:eslint-config-typescript": "yarn workspace @untile/eslint-config-typescript release",
+    "release:eslint-config-typescript-react": "yarn workspace @untile/eslint-config-typescript-react release",
+    "release:eslint-config-typescript-react-native": "yarn workspace @untile/eslint-config-typescript-react-native release",
+    "release:prettier-config": "yarn workspace @untile/prettier-config release",
+    "release:stylelint-config-react": "yarn workspace @untile/stylelint-config-react release",
+    "release:stylelint-config-react-native": "yarn workspace @untile/stylelint-config-react-native release",
+    "test": "yarn workspaces run test"
+  },
+  "lint-staged": {
+    "package.json": [
+      "sort-package-json"
+    ],
+    "yarn.lock": [
+      "yarn-deduplicate"
+    ]
+  },
+  "resolutions": {
+    "json5": "^2.2.1"
+  },
+  "validate-branch-name": {
+    "pattern": "^master{1}$|^(bugfix|dependabot|enhancement|feature|hotfix|release|support)/.+$",
+    "errorMsg": "Only the following prefixes are allowed: bugfix|dependabot|enhancement|feature|hotfix|release|support"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": "please-use-yarn",
+    "yarn": ">=1.22.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "sort-package-json": "^2.5.1",
+    "yarn-deduplicate": "^6.0.2"
+  },
+  "license": "MIT"
+}
