@@ -15,7 +15,7 @@
   "main": "src",
   "scripts": {
     "lint": "eslint .",
-    "release": "../../bin/release.sh @dan28/commitlint-config"
+    "release": "../../cmd/release.sh @dan28/commitlint-config"
   },
   "lint-staged": {
     "*.js": [

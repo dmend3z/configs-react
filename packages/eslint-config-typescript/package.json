@@ -6,7 +6,7 @@
   "main": "src",
   "scripts": {
     "lint": "eslint .",
-    "release": "../../bin/release.sh @dan28/eslint-config-typescript"
+    "release": "../../cmd/release.sh @dan28/eslint-config-typescript"
   },
   "lint-staged": {
     "package.json": [
