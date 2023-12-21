@@ -1,7 +1,16 @@
 {
-  "name": "eslint-config",
-  "version": "1.0.1",
+  "name": "@dan28/eslint-config",
+  "version": "1.0.2",
   "main": "src",
+  "description": "ESLint config for eslint",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": {
+    "name": "Daniel Mendes",
+    "email": "nunodanielmendes22@gmail.com"
+  },
   "scripts": {
     "lint": "eslint . --ignore-pattern 'test/fixtures/*'",
     "release": "../../cmd/release.sh @dan28/eslint-config",
