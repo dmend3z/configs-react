@@ -1,13 +1,17 @@
 {
   "name": "@dan28/eslint-config-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eslint for react",
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "keywords": [
+    "eslint",
+    "react"
+  ],
   "main": "src",
   "scripts": {
     "lint": "eslint .",
-    "release": "../../bin/release.sh @dan28/eslint-config-react"
+    "release": "../../cmd/release.sh @dan28/eslint-config-react"
   },
   "lint-staged": {
     "package.json": [
